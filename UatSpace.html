@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="code.js"></script>
+        <script src="code2.js"></script>
+        <script src="phun.js"></script>
+        <script src="launchDataDisplay.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="dataLoader.js"></script>
+        <title>
+            UAT space website
+        </title>
+        <script>
+            var theTime = new Date();
+            var timeInterval = 5000;
+            var running = true;
+            var index = 0;
+            var timer;
+            var data = getData();
+        </script>
+    </head>
+    <body>
+        <!--UatSpaceLogo -->
+        <img src="UATspaceLogo-1.jpg">
+        <h1 id="blinkText">
+            <blink>
+                UAT Space Program
+            </blink>
+        </h1>
+        <table border="2" width="70%" id="dataTable">
+            <col style="width: 35%;">
+            <col style="width: 35%;">
+            <thead>
+                <th>Data Type</th>
+                <th>Reading</th>
+            </thead>
+            <tbody>
+                <tr id="seconds"></tr>
+                <tr id="latitude"></tr>
+                <tr id="longitude"></tr>
+                <tr id="gps_altitude"></tr>
+                <tr id="bmp_altitude"></tr>
+                <tr id="bmp_pressure"></tr>
+                <tr id="bmp_temperature"></tr>
+                <tr id="dig_temperature"></tr>
+                <tr id="css_temperature"></tr>
+                <tr id="css_eCO2"></tr>
+                <tr id="css_TVOC"></tr>
+                <tr id="UV"></tr>
+                <tr id="accelx"></tr>
+                <tr id="accely"></tr>
+                <tr id="accelz"></tr>
+                <tr id="magneticx"></tr>
+                <tr id="magneticy"></tr>
+                <tr id="magneticz"></tr>
+                <tr id="gyrox"></tr>
+                <tr id="gyroy"></tr>
+                <tr id="gyroz"></tr>
+                <br>
+                The current time is: <div id="clockTime">Press start to display current time.</div>
+            </tbody>
+        </table>
+        <script>
+            var welcomeText="Welcome to UAT Space!";
+        </script>
+        <br>
+        <br>
+        <h2>Blastoff Timer</h2>
+        <div id= "countDis" The time will appear here fter the start is pressed.
+        br>
+    </div>
+        <button onclick="startFun()" id="startbutton" class="button">Start</button>
+        <br>
+        <button onclick="stopFun()" id="stopbutton" class="button">Stop</button>
+        <script type="text/javascript">
+            var blink = document.getElementById('blinkText');
+            setInterval(function(){
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 1500);
+        </script>
+        <br>
+        <script>
+            //place to play craps
+        document.write("Simple Craps")
+        document.write("<br/>")
+            playCraps();
+        </script>
+        <br>
+        <div id="Die1">Dice one result will go here.</div>
+        <br>
+        <div id="Die2">Dice two result will go here.</div>
+        <br>
+        <div id="Gameres">Game result will go here.</div>
+        <br>
+        <button onclick="playCraps();">Play Craps</button>
+        <h1>Play a sound</h1>
+        <button class="buttonLg" onclick="playStation();">Play space station sounds.</button>
+        <br>
+        <button class="buttonLg" onclick="playBowie();">Play David Bowie's Space Oddity</button>
+        <h1>Sandbox</h1>
+        <h2>making arrays</h2>
+        <button class="button" onclick="myClasses()">Array Test 1</button>
+        <br>
+        <br>
+        <button onclick="stackPhun()" class="button">Array Test 2</button>
+    </body>
+</html>

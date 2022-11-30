@@ -1,0 +1,14 @@
+#blinkText{
+    color: blue;
+    transition: 0.5 seconds;
+}
+body{
+    background-color: rebeccapurple;
+    color: white;
+}
+.buttonLg{
+    width: 200;
+    height: 50;
+    background-color: white;
+    border-radius: 12px;
+}
