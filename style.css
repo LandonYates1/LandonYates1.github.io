@@ -12,3 +12,9 @@ body{
     background-color: white;
     border-radius: 12px;
 }
+nav{
+    color: whitesmoke;
+}
+a:link{
+    color: pink;
+}
